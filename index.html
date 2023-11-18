@@ -444,13 +444,13 @@
       }
  
       //初始化
-      function init(array){
-        findSearchShow(array)
-        array.forEach(function(item){
+      function init(){
+        findSearchShow(data)
+        data.forEach(function(item){
           create_card(item)
         })
         // resetInputAlert()
-        checkSearchNum(array)
+        checkSearchNum(data)
       }
 
       //更新 重製 後 渲染
@@ -565,7 +565,6 @@
         const chart = c3.generate({
               bindto: "#chart",
               data: {
-                  // columns: newData,
                   columns: newData,
                   type : 'donut',
                   colors: {
@@ -675,9 +674,10 @@
           dataArray.data.forEach(function(item){
             data.push(item)
           })
-          init(data)
+          init()
           drawDount(data)
       }
+
       initData()
       resetInputAlert()
       resetOneWarnAlert()
