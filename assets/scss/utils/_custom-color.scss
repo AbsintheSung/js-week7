@@ -1,0 +1,18 @@
+$primary-0:#00807e;
+$primary-1:#64c3bf;
+$primary-2:#F7F7F7;
+$primary-3:#030303;
+$primary-4:#818A91;
+$danger-1:#B21C01;
+
+$custom-colors:(
+    "primary-0":$primary-0,
+    "primary-1":$primary-1,
+    "primary-2":$primary-2,
+    "primary-3":$primary-3,
+    "primary-4":$primary-4,
+    "danger-1":$danger-1,
+
+);
+
+$theme-colors:map-merge($theme-colors , $custom-colors );
