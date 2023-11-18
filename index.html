@@ -446,11 +446,10 @@
       //初始化
       function init(array){
         findSearchShow(array)
-        data.forEach(function(item){
-          // domElement.push(create_card(item))
+        array.forEach(function(item){
           create_card(item)
         })
-        resetInputAlert()
+        // resetInputAlert()
         checkSearchNum(array)
       }
 
@@ -679,8 +678,8 @@
           init(data)
           drawDount(data)
       }
-      
       initData()
+      resetInputAlert()
       resetOneWarnAlert()
       
     </script>
